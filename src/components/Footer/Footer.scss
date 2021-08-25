@@ -1,0 +1,40 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 90vh;
+  height: 10vh;
+  line-height: 10vh;
+  background-color: #bbd5f8;
+  color: #122b44;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+
+    .characters {
+      display: flex;
+      width: 50vh;
+      justify-content: space-around;
+      align-items: center;
+
+      .character-container {
+        display: grid;
+        grid-template-areas: div;
+        height: 6vh;
+        width: min-content;
+        .character {
+          grid-area: div;
+          height: 6vh;
+        }
+        .overlay-x {
+          grid-area: div;
+          font-size: 8vh;
+          line-height: 8vh;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
